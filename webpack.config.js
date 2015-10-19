@@ -18,7 +18,7 @@ config = {
       test: /\.jsx?$/,
       loader: 'babel'
     },{
-      test:/\.(png/jpg)$/,
+      test: /\.(png|jpg)$/,
       loader: 'url?limit=25000'
     },{
       test: /\.woff$/,
@@ -26,7 +26,8 @@ config = {
     },{
       test: /\.scss$/,
       loader: 'style!css!sass'
-    }]
+    }],
+    noParse: [pathToReact]
   }
 };
 
