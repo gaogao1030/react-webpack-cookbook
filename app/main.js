@@ -1,6 +1,6 @@
 'use strict';
 import React from 'react';
-import Hello from './component';
+import Hello from './component.jsx';
 
 main();
 
