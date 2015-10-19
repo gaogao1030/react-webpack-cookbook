@@ -17,6 +17,15 @@ config = {
     loaders: [{
       test: /\.jsx?$/,
       loader: 'babel'
+    },{
+      test:/\.(png/jpg)$/,
+      loader: 'url?limit=25000'
+    },{
+      test: /\.woff$/,
+      loader: 'url?limit=100000'
+    },{
+      test: /\.scss$/,
+      loader: 'style!css!sass'
     }]
   }
 };
